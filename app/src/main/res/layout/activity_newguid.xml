@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newguid"
+    >
+
+    <EditText
+        android:id="@+id/ngname"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="90dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/ngemail"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ngname"
+        android:background="@drawable/round"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ngpassword"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round"
+        android:hint="@string/password"
+        android:padding="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_below="@id/ngemail"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ngmobile"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ngpassword"
+        android:background="@drawable/round"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/ngcountry"
+        android:layout_centerHorizontal="true"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ngmobile"
+        android:background="@drawable/round"
+        android:hint="@string/country"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/gback1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/iosback" />
+    <Button
+        android:id="@+id/gnext"
+        app:srcCompat="@drawable/next"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ngcountry"
+        android:layout_marginStart="100dp"
+        android:layout_alignStart="@+id/ngcountry"
+        android:background="@drawable/round"
+        android:layout_marginTop="30dp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+
+
+
+
+</RelativeLayout>

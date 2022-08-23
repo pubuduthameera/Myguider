@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "171677284433",
+    "project_id": "my-guider-2e37e",
+    "storage_bucket": "my-guider-2e37e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171677284433:android:f5bb10b7a1eab94159e070",
+        "android_client_info": {
+          "package_name": "com.example.myguider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171677284433-bmjqr3u4176vddijolmoo81b40frsu4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myguider",
+            "certificate_hash": "8c9251ff6a4bd248d564325ae3a4dd73c7dc50f6"
+          }
+        },
+        {
+          "client_id": "171677284433-1lmr2tp876fktdgrmv5tp790s8uf8c8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZQqMpnWDAt1nJ21F11VIUT5z1IuIZ8rU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171677284433-1lmr2tp876fktdgrmv5tp790s8uf8c8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

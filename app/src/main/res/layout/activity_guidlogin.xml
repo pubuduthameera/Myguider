@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userlogin">
+
+    <EditText
+        android:id="@+id/gemail"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round"
+        android:hint="@string/email_address"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginTop="300dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/gpassword"
+        android:layout_width="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round"
+        android:hint="@string/password"
+        android:padding="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_below="@id/gemail"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:autofillHints="" />
+    <LinearLayout
+        android:id="@+id/gliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gpassword"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_alignStart="@+id/gpassword"
+        >
+
+        <CheckBox
+            android:id="@+id/gcheckbox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/remember_me"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/gforget"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/forget_password"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="80dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/gsignin"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gliner"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round"
+        android:layout_marginTop="10dp"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/gregister"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/do_you_have_an_account"
+        android:textSize="14sp"
+        android:layout_below="@+id/gsignin"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_alignStart="@id/gsignin"
+        android:layout_marginStart="180dp"
+        />
+    <Button
+        android:id="@+id/userbtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner"
+        android:layout_below="@+id/gliner"
+        android:text="@string/user"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_marginTop="158dp"
+        android:layout_alignStart="@+id/gsignin"
+        />
+    <Button
+        android:id="@+id/guidebtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gliner"
+        android:layout_marginTop="158dp"
+        android:background="@drawable/round_corner2"
+        android:text="@string/guide"
+        android:layout_alignEnd="@+id/gsignin"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

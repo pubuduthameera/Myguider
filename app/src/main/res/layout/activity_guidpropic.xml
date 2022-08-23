@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".guidpropic">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:transitionName="proimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/user"
+        app:civ_border_width="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:civ_border_color="#FF000000"
+        tools:ignore="MissingConstraints"
+        />
+    <TextView
+        android:id="@+id/propic"
+        android:transitionName="propic"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_picture"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/floatingActionButton"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_marginTop="210dp"
+        app:srcCompat="@drawable/ic_photo_camera_black_24dp"
+        tools:ignore="VectorDrawableCompat"
+        android:focusable="true" />
+
+    <EditText
+        android:id="@+id/gdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="@string/description"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/propic"
+        android:layout_marginTop="20dp"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/create_accbtn"
+        android:transitionName="CAccbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/create_account"
+        android:textAllCaps="false"
+        android:background="@drawable/round"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gdescription"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>
